@@ -61,6 +61,12 @@
     <Compile Include="FAMILLE.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="FGestionRemboursementFrais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGestionRemboursementFrais.Designer.cs">
+      <DependentUpon>FGestionRemboursementFrais.cs</DependentUpon>
+    </Compile>
     <Compile Include="fichefrais.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -87,6 +93,12 @@
     </Compile>
     <Compile Include="MEDICAMENT.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Menu.Designer.cs">
+      <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="MOTIF.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
@@ -128,6 +140,9 @@
     </Compile>
     <EmbeddedResource Include="Gestion des comptes rendus.resx">
       <DependentUpon>Gestion des comptes rendus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Menu.resx">
+      <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
