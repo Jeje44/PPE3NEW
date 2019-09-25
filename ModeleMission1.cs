@@ -12,7 +12,7 @@ namespace PPE3_Github_Tajek
         public static void init()
         {
             /* Instantiation d’un objet de la classe typée chaine de connexion SqlConnection */
-            maConnexion = new PPE3_TAJEKEntities(); 
+            maConnexion = new PPE3_TAJEKEntities();
         }
     }
 }
