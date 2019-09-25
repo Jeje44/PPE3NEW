@@ -70,12 +70,6 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
-    <Compile Include="FRapportVisite.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FRapportVisite.Designer.cs">
-      <DependentUpon>FRapportVisite.cs</DependentUpon>
-    </Compile>
     <Compile Include="Gestion des comptes rendus.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -106,7 +100,6 @@
     <Compile Include="Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="ModeleMission2.cs" />
     <Compile Include="MOTIF.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -145,9 +138,6 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FRapportVisite.resx">
-      <DependentUpon>FRapportVisite.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Gestion des comptes rendus.resx">
       <DependentUpon>Gestion des comptes rendus.cs</DependentUpon>
     </EmbeddedResource>

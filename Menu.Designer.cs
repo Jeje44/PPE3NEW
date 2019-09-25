@@ -50,7 +50,6 @@
             this.btnMiss2.TabIndex = 1;
             this.btnMiss2.Text = "Mission 2";
             this.btnMiss2.UseVisualStyleBackColor = true;
-            this.btnMiss2.Click += new System.EventHandler(this.BtnMiss2_Click);
             // 
             // btnMiss3
             // 
