@@ -16,7 +16,7 @@ namespace PPE3_Github_Tajek
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
+            Application.Run(new Menu()); 
         }
     }
 }
