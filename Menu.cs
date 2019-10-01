@@ -22,5 +22,10 @@ namespace PPE3_Github_Tajek
             Form LaFormeRemboursementFrais = new FGestionRemboursementFrais();
             LaFormeRemboursementFrais.Show();
         }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
