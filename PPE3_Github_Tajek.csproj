@@ -79,6 +79,12 @@
     <Compile Include="FraisForfait.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="FRapportsDeVisite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRapportsDeVisite.Designer.cs">
+      <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
+    </Compile>
     <Compile Include="Laboratoire.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -101,6 +107,7 @@
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
     <Compile Include="ModeleMission1.cs" />
+    <Compile Include="ModeleMission2.cs" />
     <Compile Include="MOTIF.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -141,6 +148,9 @@
     </Compile>
     <EmbeddedResource Include="FConnex.resx">
       <DependentUpon>FConnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRapportsDeVisite.resx">
+      <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
