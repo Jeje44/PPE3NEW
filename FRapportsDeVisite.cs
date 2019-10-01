@@ -35,7 +35,7 @@ namespace PPE3_Github_Tajek
 
         private void FRapportsDeVisite_Load(object sender, EventArgs e)
         {
-           cboPraticien
+           
           
             
         }
