@@ -61,6 +61,12 @@
     <Compile Include="FAMILLE.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="FConnex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConnex.Designer.cs">
+      <DependentUpon>FConnex.cs</DependentUpon>
+    </Compile>
     <Compile Include="FGestionRemboursementFrais.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,12 +75,6 @@
     </Compile>
     <Compile Include="fichefrais.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
-    </Compile>
-    <Compile Include="FConnexion.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FConnexion.Designer.cs">
-      <DependentUpon>FConnexion.cs</DependentUpon>
     </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
@@ -139,8 +139,8 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="FConnexion.resx">
-      <DependentUpon>FConnexion.cs</DependentUpon>
+    <EmbeddedResource Include="FConnex.resx">
+      <DependentUpon>FConnex.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
