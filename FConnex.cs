@@ -18,22 +18,40 @@ namespace PPE3_Github_Tajek
         public FConnex()
         {
             InitializeComponent();
-            System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
-            t.Start();
-            this.Close();
-        }
-       
 
-       // et on ajoute la méthode :
+        }
+
+
+        // et on ajoute la méthode :
 
         public static void ThreadProc()
         {
             Application.Run(new Menu());
         }
 
+
         private void FConnex_Load(object sender, EventArgs e)
         {
+            btnValidé.Visible = true;
+            btnOk.Visible = false;
+        }
+
+        private void BtnValidé_Click(object sender, EventArgs e)
+        {
+
+            MessageBox.Show(ModeleMission1.validConnexion(txtIdentifiant.Text.ToString(), txtPasswd.Text.ToString()));
+
+            if (ModeleMission1.getConnexionValide())
+            {
+                btnOk.Visible = true;
+                btnValidé.Visible = false;
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProc));
+                t.Start();
+                this.Close();
+            }
+          
 
         }
+        
     }
 }

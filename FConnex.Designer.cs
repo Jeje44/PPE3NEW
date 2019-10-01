@@ -32,6 +32,7 @@
             this.txtIdentifiant = new System.Windows.Forms.TextBox();
             this.txtPasswd = new System.Windows.Forms.TextBox();
             this.btnValidé = new System.Windows.Forms.Button();
+            this.btnOk = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -66,12 +67,24 @@
             this.btnValidé.TabIndex = 3;
             this.btnValidé.Text = "Validé";
             this.btnValidé.UseVisualStyleBackColor = true;
+            this.btnValidé.Click += new System.EventHandler(this.BtnValidé_Click);
+            // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(289, 180);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(75, 23);
+            this.btnOk.TabIndex = 4;
+            this.btnOk.Text = "Ok";
+            this.btnOk.UseVisualStyleBackColor = true;
+
             // 
             // FConnex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnValidé);
             this.Controls.Add(this.txtPasswd);
             this.Controls.Add(this.txtIdentifiant);
@@ -90,5 +103,6 @@
         private System.Windows.Forms.TextBox txtIdentifiant;
         private System.Windows.Forms.TextBox txtPasswd;
         private System.Windows.Forms.Button btnValidé;
+        private System.Windows.Forms.Button btnOk;
     }
 }

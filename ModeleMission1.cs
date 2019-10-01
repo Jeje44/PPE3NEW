@@ -11,8 +11,9 @@ namespace PPE3_Github_Tajek
     {
         private static PPE3_TAJEKEntities maConnexion;
 
-        private static Visiteur utilisateurConnecte;
+        private static Visiteur unVisiteur;
         private static bool connexionValide;
+       
 
 
         public static void init()
@@ -31,12 +32,35 @@ namespace PPE3_Github_Tajek
             }
             return sb.ToString();
         }
-        public static string validConnexion(string id, string mp)
-    {
-    string message = "";
-    // Ecrire le code qui renvoie le message à afficher et mets à jour les variables utilisateurConnecte et connexionValide, la comparaison des mots de passes se fera via utilisateurConnecte.passwd.Substring(2).Equals(GetMd5Hash(mp))
-    return message;
-    }
+        public static string validConnexion(string identifiant, string mp)
+        {
+            string message = "";
+            var LQuery = maConnexion.Visiteur.ToList()
+                           .Where(x => x.identifiant == identifiant);
+            unVisiteur = (Visiteur)LQuery.First();
+           
+            
+                if (unVisiteur.password.ToString() == GetMd5Hash(mp.ToString()))
+                {
+                    connexionValide = true;
+                   
+                    message = message + "Connecté";
+                }
+                else
+                {
+                    
+                    connexionValide = false;
+                    message = message + "Erreur de mot de passe ou Identifiant incorrect";
+                }
+            
+            maConnexion.SaveChanges();
+            return message;
+        }
+
+         public static bool getConnexionValide()
+        {
+            return connexionValide; 
+        }
 
     }
 }
