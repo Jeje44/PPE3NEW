@@ -39,8 +39,12 @@ namespace PPE3_Github_Tajek
             cboPraticien.ValueMember = "idMedecin"; //permet de stocker l'identifiant 
             cboPraticien.DisplayMember = "nom";
             bsMedecin.DataSource = ModeleMission2.listeMedecin();
-            cboPraticien.DataSource = bsMedecin; 
+            cboPraticien.DataSource = bsMedecin;
 
+            cboMotif.ValueMember = "idMotif";
+            cboMotif.DisplayMember = "libMotif";
+            bsMotif.DataSource = ModeleMission2.listeMotif();
+            cboMotif.DataSource = bsMotif;
 
         }
 
@@ -63,5 +67,7 @@ namespace PPE3_Github_Tajek
             e.Value = nomprenom;
 
         }
+
+       
     }
 }

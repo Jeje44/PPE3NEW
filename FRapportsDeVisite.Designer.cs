@@ -46,6 +46,7 @@
             this.bsOffrir = new System.Windows.Forms.BindingSource(this.components);
             this.bsMotif = new System.Windows.Forms.BindingSource(this.components);
             this.cboMotif = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOffrir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).BeginInit();
@@ -92,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(432, 216);
+            this.label5.Location = new System.Drawing.Point(403, 216);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(97, 13);
             this.label5.TabIndex = 4;
@@ -127,7 +128,7 @@
             this.dgvOffrir.AllowUserToAddRows = false;
             this.dgvOffrir.AllowUserToDeleteRows = false;
             this.dgvOffrir.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvOffrir.Location = new System.Drawing.Point(435, 248);
+            this.dgvOffrir.Location = new System.Drawing.Point(435, 232);
             this.dgvOffrir.Name = "dgvOffrir";
             this.dgvOffrir.ReadOnly = true;
             this.dgvOffrir.Size = new System.Drawing.Size(263, 150);
@@ -175,11 +176,22 @@
             this.cboMotif.Size = new System.Drawing.Size(139, 21);
             this.cboMotif.TabIndex = 14;
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(296, 9);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(145, 20);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Rapport de visite";
+            // 
             // FRapportsDeVisite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.cboMotif);
             this.Controls.Add(this.dtpDateRapport);
             this.Controls.Add(this.btnDetails);
@@ -225,5 +237,6 @@
         private System.Windows.Forms.ComboBox cboPraticien;
         private System.Windows.Forms.DateTimePicker dtpDateRapport;
         private System.Windows.Forms.ComboBox cboMotif;
+        private System.Windows.Forms.Label label7;
     }
 }
