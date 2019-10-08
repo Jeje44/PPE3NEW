@@ -55,6 +55,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsulterFicheDeFrais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConsulterFicheDeFrais.Designer.cs">
+      <DependentUpon>ConsulterFicheDeFrais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModeleMission3.cs" />
     <Compile Include="Etat.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -155,6 +162,12 @@
     <Compile Include="Region.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="RenseignerFicheDeFrais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RenseignerFicheDeFrais.Designer.cs">
+      <DependentUpon>RenseignerFicheDeFrais.cs</DependentUpon>
+    </Compile>
     <Compile Include="Secteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -173,6 +186,9 @@
     <EmbeddedResource Include="FModifVisiteur.resx">
       <DependentUpon>FModifVisiteur.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FGestionRemboursementFrais.resx">
+      <DependentUpon>FGestionRemboursementFrais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +204,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="RenseignerFicheDeFrais.resx">
+      <DependentUpon>RenseignerFicheDeFrais.cs</DependentUpon>
+    </EmbeddedResource>
     <EntityDeploy Include="PPE3_Github_Tajek.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
       <LastGenOutput>PPE3_Github_Tajek.Designer.cs</LastGenOutput>
