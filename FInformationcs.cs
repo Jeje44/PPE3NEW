@@ -30,5 +30,11 @@ namespace PPE3_Github_Tajek
 
 
         }
+
+        private void BtnModifuer_Click(object sender, EventArgs e)
+        {
+            Form laFormModifier = new FModifVisiteur();
+            laFormModifier.Show();
+        }
     }
 }

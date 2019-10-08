@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnModifuer = new System.Windows.Forms.Button();
             this.tbNomVisteur = new System.Windows.Forms.TextBox();
             this.tbPrenomVisiteur = new System.Windows.Forms.TextBox();
             this.tbCPVisiteur = new System.Windows.Forms.TextBox();
@@ -42,14 +42,15 @@
             this.tbDateEmbauche = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
-            // button1
+            // btnModifuer
             // 
-            this.button1.Location = new System.Drawing.Point(214, 342);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnModifuer.Location = new System.Drawing.Point(214, 342);
+            this.btnModifuer.Name = "btnModifuer";
+            this.btnModifuer.Size = new System.Drawing.Size(75, 23);
+            this.btnModifuer.TabIndex = 0;
+            this.btnModifuer.Text = "Modifier";
+            this.btnModifuer.UseVisualStyleBackColor = true;
+            this.btnModifuer.Click += new System.EventHandler(this.BtnModifuer_Click);
             // 
             // tbNomVisteur
             // 
@@ -154,7 +155,7 @@
             this.Controls.Add(this.tbCPVisiteur);
             this.Controls.Add(this.tbPrenomVisiteur);
             this.Controls.Add(this.tbNomVisteur);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnModifuer);
             this.Name = "FInformationcs";
             this.Text = "FInformationcs";
             this.Load += new System.EventHandler(this.FInformationcs_Load);
@@ -165,7 +166,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnModifuer;
         private System.Windows.Forms.TextBox tbNomVisteur;
         private System.Windows.Forms.TextBox tbPrenomVisiteur;
         private System.Windows.Forms.TextBox tbCPVisiteur;

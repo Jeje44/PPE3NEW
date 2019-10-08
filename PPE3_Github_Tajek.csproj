@@ -88,6 +88,12 @@
     <Compile Include="FInformationcs.Designer.cs">
       <DependentUpon>FInformationcs.cs</DependentUpon>
     </Compile>
+    <Compile Include="FModifVisiteur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FModifVisiteur.Designer.cs">
+      <DependentUpon>FModifVisiteur.cs</DependentUpon>
+    </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -160,6 +166,12 @@
     </Compile>
     <EmbeddedResource Include="FConnex.resx">
       <DependentUpon>FConnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInformationcs.resx">
+      <DependentUpon>FInformationcs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FModifVisiteur.resx">
+      <DependentUpon>FModifVisiteur.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
