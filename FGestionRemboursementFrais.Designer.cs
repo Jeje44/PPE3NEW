@@ -28,12 +28,46 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.Renseigner = new System.Windows.Forms.Button();
+            this.Consulter = new System.Windows.Forms.Button();
+            this.SuspendLayout();
+            // 
+            // Renseigner
+            // 
+            this.Renseigner.Location = new System.Drawing.Point(203, 250);
+            this.Renseigner.Name = "Renseigner";
+            this.Renseigner.Size = new System.Drawing.Size(75, 23);
+            this.Renseigner.TabIndex = 0;
+            this.Renseigner.Text = "Renseigner";
+            this.Renseigner.UseVisualStyleBackColor = true;
+            this.Renseigner.Click += new System.EventHandler(this.Renseigner_Click);
+            // 
+            // Consulter
+            // 
+            this.Consulter.Location = new System.Drawing.Point(529, 250);
+            this.Consulter.Name = "Consulter";
+            this.Consulter.Size = new System.Drawing.Size(75, 23);
+            this.Consulter.TabIndex = 1;
+            this.Consulter.Text = "Consulter";
+            this.Consulter.UseVisualStyleBackColor = true;
+            this.Consulter.Click += new System.EventHandler(this.Consulter_Click);
+            // 
+            // FGestionRemboursementFrais
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.Consulter);
+            this.Controls.Add(this.Renseigner);
+            this.Name = "FGestionRemboursementFrais";
             this.Text = "FGestionRemboursementFrais";
+            this.ResumeLayout(false);
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button Renseigner;
+        private System.Windows.Forms.Button Consulter;
     }
 }

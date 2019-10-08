@@ -16,5 +16,17 @@ namespace PPE3_Github_Tajek
         {
             InitializeComponent();
         }
+
+        private void Consulter_Click(object sender, EventArgs e)
+        {
+            Form LaFormConsulterFrais = new ConsulterFicheDeFrais();
+            LaFormConsulterFrais.Show();
+        }
+
+        private void Renseigner_Click(object sender, EventArgs e)
+        {
+            Form LaFormeRenseignerFrais = new RenseignerFicheDeFrais();
+            LaFormeRenseignerFrais.Show();
+        }
     }
 }

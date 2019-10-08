@@ -19,6 +19,7 @@ namespace PPE3_Github_Tajek
 
         private void BtnMiss3_Click(object sender, EventArgs e)
         {
+            //choix fiche de frais ou vaidation paiement.
             Form LaFormeRemboursementFrais = new FGestionRemboursementFrais();
             LaFormeRemboursementFrais.Show();
         }
