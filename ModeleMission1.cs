@@ -11,7 +11,7 @@ namespace PPE3_Github_Tajek
     {
         private static PPE3_TAJEKEntities maConnexion;
 
-        private static Visiteur unVisiteur;
+        public static Visiteur unVisiteur , unVisiteurCo;
         private static bool connexionValide;
        
 
@@ -42,6 +42,7 @@ namespace PPE3_Github_Tajek
             
                 if (unVisiteur.password.ToString() == GetMd5Hash(mp.ToString()))
                 {
+                unVisiteurCo = unVisiteur;
                     connexionValide = true;
                    
                     message = message + "Connecté";
@@ -61,6 +62,8 @@ namespace PPE3_Github_Tajek
         {
             return connexionValide; 
         }
+      
+          
 
     }
 }
