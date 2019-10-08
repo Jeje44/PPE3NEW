@@ -33,6 +33,8 @@
             this.txtPasswd = new System.Windows.Forms.TextBox();
             this.btnValidé = new System.Windows.Forms.Button();
             this.btnOk = new System.Windows.Forms.Button();
+            this.lblID = new System.Windows.Forms.Label();
+            this.lblMDP = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -50,6 +52,7 @@
             this.txtIdentifiant.Name = "txtIdentifiant";
             this.txtIdentifiant.Size = new System.Drawing.Size(100, 20);
             this.txtIdentifiant.TabIndex = 1;
+            this.txtIdentifiant.Text = "dandre";
             // 
             // txtPasswd
             // 
@@ -58,6 +61,7 @@
             this.txtPasswd.PasswordChar = '*';
             this.txtPasswd.Size = new System.Drawing.Size(100, 20);
             this.txtPasswd.TabIndex = 2;
+            this.txtPasswd.Text = "dandre";
             // 
             // btnValidé
             // 
@@ -77,13 +81,32 @@
             this.btnOk.TabIndex = 4;
             this.btnOk.Text = "Ok";
             this.btnOk.UseVisualStyleBackColor = true;
-
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.Location = new System.Drawing.Point(176, 102);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(59, 13);
+            this.lblID.TabIndex = 5;
+            this.lblID.Text = "Identifiant :";
+            // 
+            // lblMDP
+            // 
+            this.lblMDP.AutoSize = true;
+            this.lblMDP.Location = new System.Drawing.Point(179, 147);
+            this.lblMDP.Name = "lblMDP";
+            this.lblMDP.Size = new System.Drawing.Size(80, 13);
+            this.lblMDP.TabIndex = 6;
+            this.lblMDP.Text = "Mot de passe : ";
             // 
             // FConnex
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.lblMDP);
+            this.Controls.Add(this.lblID);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.btnValidé);
             this.Controls.Add(this.txtPasswd);
@@ -104,5 +127,7 @@
         private System.Windows.Forms.TextBox txtPasswd;
         private System.Windows.Forms.Button btnValidé;
         private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.Label lblID;
+        private System.Windows.Forms.Label lblMDP;
     }
 }
