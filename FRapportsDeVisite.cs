@@ -35,15 +35,32 @@ namespace PPE3_Github_Tajek
 
         private void FRapportsDeVisite_Load(object sender, EventArgs e)
         {
-           
-          
             
+            cboPraticien.ValueMember = "idMedecin"; //permet de stocker l'identifiant 
+            cboPraticien.DisplayMember = "nom";
+            bsMedecin.DataSource = ModeleMission2.listeMedecin();
+            cboPraticien.DataSource = bsMedecin; 
+
+
         }
 
         private void BsMedecin_CurrentChanged(object sender, EventArgs e)
         {
             MEDECIN m = (MEDECIN)bsMedecin.Current;
-            bsMedecin.DataSource = ModeleMission2.listeMedecin(); 
+         
+
+        }
+
+        private void BtnDetails_Click(object sender, EventArgs e)
+        {
+            Form LaFormeInformationMedecin = new FInfoMedecin();
+            LaFormeInformationMedecin.Show();
+        }
+
+        private void CboPraticien_Format(object sender, ListControlConvertEventArgs e)
+        {
+            string nomprenom = string.Concat(((MEDECIN)e.ListItem).nom, " ", ((MEDECIN)e.ListItem).prenom);
+            e.Value = nomprenom;
 
         }
     }

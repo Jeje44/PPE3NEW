@@ -41,6 +41,7 @@
             this.btnMiss1.TabIndex = 0;
             this.btnMiss1.Text = "Mission1";
             this.btnMiss1.UseVisualStyleBackColor = true;
+            this.btnMiss1.Click += new System.EventHandler(this.BtnMiss1_Click);
             // 
             // btnMiss2
             // 
@@ -72,7 +73,6 @@
             this.Controls.Add(this.btnMiss1);
             this.Name = "Menu";
             this.Text = "Menu";
-            
             this.ResumeLayout(false);
 
         }

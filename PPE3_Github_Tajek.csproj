@@ -83,6 +83,18 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="FInfoMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInfoMedecin.Designer.cs">
+      <DependentUpon>FInfoMedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInformationcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInformationcs.Designer.cs">
+      <DependentUpon>FInformationcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>

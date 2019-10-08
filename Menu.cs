@@ -29,5 +29,11 @@ namespace PPE3_Github_Tajek
             Form LaFormeRapportDeVisite = new FRapportsDeVisite();
             LaFormeRapportDeVisite.Show();
         }
+
+        private void BtnMiss1_Click(object sender, EventArgs e)
+        {
+            Form LaFormeGestionDesVisiteur = new FInformationcs();
+            LaFormeGestionDesVisiteur.Show();
+        }
     }
 }
