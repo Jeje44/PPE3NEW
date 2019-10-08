@@ -18,6 +18,7 @@ namespace PPE3_Github_Tajek
             Application.SetCompatibleTextRenderingDefault(false);
             ModeleMission1.init();
             ModeleMission2.init();
+            ModeleMission3.Init();
             Application.Run(new FConnex()); 
         }
     }
