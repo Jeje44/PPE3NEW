@@ -30,7 +30,7 @@ namespace PPE3_Github_Tajek
             {
                 sb.Append(hash[i].ToString("x2"));
             }
-            return sb.ToString();
+            return ("0x"+sb.ToString().ToUpper());
         }
         public static string validConnexion(string identifiant, string mp)
         {
