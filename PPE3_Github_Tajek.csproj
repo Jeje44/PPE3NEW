@@ -76,6 +76,12 @@
     <Compile Include="fichefrais.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <Compile Include="FInfoMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInfoMedecin.Designer.cs">
+      <DependentUpon>FInfoMedecin.cs</DependentUpon>
+    </Compile>
     <Compile Include="FraisForfait.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
@@ -148,6 +154,9 @@
     </Compile>
     <EmbeddedResource Include="FConnex.resx">
       <DependentUpon>FConnex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInfoMedecin.resx">
+      <DependentUpon>FInfoMedecin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>

@@ -36,16 +36,16 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtNumRapport = new System.Windows.Forms.TextBox();
-            this.txtMotifVisite = new System.Windows.Forms.TextBox();
             this.txtBilan = new System.Windows.Forms.TextBox();
             this.dgvOffrir = new System.Windows.Forms.DataGridView();
             this.btnDetails = new System.Windows.Forms.Button();
+            this.cboPraticien = new System.Windows.Forms.ComboBox();
+            this.dtpDateRapport = new System.Windows.Forms.DateTimePicker();
             this.bsRapport = new System.Windows.Forms.BindingSource(this.components);
             this.bsMedecin = new System.Windows.Forms.BindingSource(this.components);
             this.bsOffrir = new System.Windows.Forms.BindingSource(this.components);
             this.bsMotif = new System.Windows.Forms.BindingSource(this.components);
-            this.cboPraticien = new System.Windows.Forms.ComboBox();
-            this.dtpDateRapport = new System.Windows.Forms.DateTimePicker();
+            this.cboMotif = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOffrir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).BeginInit();
@@ -114,13 +114,6 @@
             this.txtNumRapport.Size = new System.Drawing.Size(100, 20);
             this.txtNumRapport.TabIndex = 6;
             // 
-            // txtMotifVisite
-            // 
-            this.txtMotifVisite.Location = new System.Drawing.Point(151, 164);
-            this.txtMotifVisite.Name = "txtMotifVisite";
-            this.txtMotifVisite.Size = new System.Drawing.Size(100, 20);
-            this.txtMotifVisite.TabIndex = 9;
-            // 
             // txtBilan
             // 
             this.txtBilan.Location = new System.Drawing.Point(151, 216);
@@ -148,6 +141,23 @@
             this.btnDetails.TabIndex = 12;
             this.btnDetails.Text = "Détails";
             this.btnDetails.UseVisualStyleBackColor = true;
+            this.btnDetails.Click += new System.EventHandler(this.BtnDetails_Click);
+            // 
+            // cboPraticien
+            // 
+            this.cboPraticien.FormattingEnabled = true;
+            this.cboPraticien.Location = new System.Drawing.Point(151, 81);
+            this.cboPraticien.Name = "cboPraticien";
+            this.cboPraticien.Size = new System.Drawing.Size(121, 21);
+            this.cboPraticien.TabIndex = 7;
+            this.cboPraticien.Format += new System.Windows.Forms.ListControlConvertEventHandler(this.CboPraticien_Format);
+            // 
+            // dtpDateRapport
+            // 
+            this.dtpDateRapport.Location = new System.Drawing.Point(151, 129);
+            this.dtpDateRapport.Name = "dtpDateRapport";
+            this.dtpDateRapport.Size = new System.Drawing.Size(200, 20);
+            this.dtpDateRapport.TabIndex = 13;
             // 
             // bsRapport
             // 
@@ -157,31 +167,24 @@
             // 
             this.bsMedecin.CurrentChanged += new System.EventHandler(this.BsMedecin_CurrentChanged);
             // 
-            // cboPraticien
+            // cboMotif
             // 
-            this.cboPraticien.FormattingEnabled = true;
-            this.cboPraticien.Location = new System.Drawing.Point(151, 81);
-            this.cboPraticien.Name = "cboPraticien";
-            this.cboPraticien.Size = new System.Drawing.Size(121, 21);
-            this.cboPraticien.TabIndex = 7;
-            // 
-            // dtpDateRapport
-            // 
-            this.dtpDateRapport.Location = new System.Drawing.Point(151, 129);
-            this.dtpDateRapport.Name = "dtpDateRapport";
-            this.dtpDateRapport.Size = new System.Drawing.Size(200, 20);
-            this.dtpDateRapport.TabIndex = 13;
+            this.cboMotif.FormattingEnabled = true;
+            this.cboMotif.Location = new System.Drawing.Point(151, 171);
+            this.cboMotif.Name = "cboMotif";
+            this.cboMotif.Size = new System.Drawing.Size(139, 21);
+            this.cboMotif.TabIndex = 14;
             // 
             // FRapportsDeVisite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.cboMotif);
             this.Controls.Add(this.dtpDateRapport);
             this.Controls.Add(this.btnDetails);
             this.Controls.Add(this.dgvOffrir);
             this.Controls.Add(this.txtBilan);
-            this.Controls.Add(this.txtMotifVisite);
             this.Controls.Add(this.cboPraticien);
             this.Controls.Add(this.txtNumRapport);
             this.Controls.Add(this.label6);
@@ -212,7 +215,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtNumRapport;
-        private System.Windows.Forms.TextBox txtMotifVisite;
         private System.Windows.Forms.TextBox txtBilan;
         private System.Windows.Forms.DataGridView dgvOffrir;
         private System.Windows.Forms.Button btnDetails;
@@ -222,5 +224,6 @@
         private System.Windows.Forms.BindingSource bsMotif;
         private System.Windows.Forms.ComboBox cboPraticien;
         private System.Windows.Forms.DateTimePicker dtpDateRapport;
+        private System.Windows.Forms.ComboBox cboMotif;
     }
 }
