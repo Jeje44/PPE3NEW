@@ -68,6 +68,7 @@ namespace PPE3_Github_Tajek
             var LQuery = maConnexion.MEDECIN.ToList()
                            .Where(x => x.idMedecin == y);
             return ((MEDECIN)LQuery.ToList().First());
+
         }
     }
 }

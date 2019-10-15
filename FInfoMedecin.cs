@@ -35,6 +35,8 @@ namespace PPE3_Github_Tajek
             txtNom.Text = ModeleMission2.MedecinChoisi.nom;
             txtPrenom.Text = ModeleMission2.MedecinChoisi.prenom;
             txtTelephone.Text = ModeleMission2.MedecinChoisi.tel;
+
+
            // cboPraticien.SelectedIndex = ModeleMission2.MedecinChoisi.idNation - 1;
 
 
