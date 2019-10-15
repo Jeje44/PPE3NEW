@@ -25,10 +25,28 @@ namespace PPE3_Github_Tajek
             tbAdresseVisiteur.Text = unVisiteur.rue.ToString();
             tbPrenomVisiteur.Text = unVisiteur.prenom.ToString();
             tbVilleVisiteur.Text = unVisiteur.ville.ToString();
-            tbDateEmbauche.Text = unVisiteur.dateEmbauche.ToString(); 
+            tbDateEmbauche.Text = unVisiteur.dateEmbauche.ToString();
+            btnOK.Visible = true;
+           // btnModifuer.Visible = false;
 
+        }
 
+        private void BtnModifuer_Click(object sender, EventArgs e)
+        {
+            ModeleMission1.ModifVisiteur(tbAdresseVisiteur.Text, tbCPVisiteur.Text, tbVilleVisiteur.Text);
+            
+               MessageBox.Show("Modification validée");
+            
 
+            
+            
+          
+
+        }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            this.Close(); 
         }
     }
 }
