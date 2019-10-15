@@ -40,10 +40,10 @@ namespace PPE3_Github_Tajek
         {
             return maConnexion.fichefrais.ToList();
         }
-        public static List<> Liste()
+        /*public static List<> Liste()
         {
             return maConnexion..ToList();
-        }
+        }*/
 
     }
 }

@@ -9,10 +9,14 @@ namespace PPE3_Github_Tajek
     public static class ModeleMission2
     {
         private static RAPPORT rapportChoisi;
+        private static MEDECIN medecinChoisi; 
 
         private static PPE3_TAJEKEntities maConnexion;
 
         public static RAPPORT RapportChoisi { get => rapportChoisi; set => rapportChoisi = value; }
+        public static MEDECIN MedecinChoisi { get => medecinChoisi; set => medecinChoisi = value; }
+
+
 
         public static void init()
         {
@@ -44,17 +48,26 @@ namespace PPE3_Github_Tajek
         {
             return maConnexion.Visiteur.ToList();
         }
-        public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
-        {
-            rapportChoisi = new RAPPORT; 
 
-        }
 
-        public static void ModifRapport(int idRapport, DateTime dRapport, int idMotif, string b, int idMedecin)
+            /*public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
+            {
+                rapportChoisi = new RAPPORT; 
+
+            }*/
+
+            public static void ModifRapport(int idRapport, DateTime dRapport, int idMotif, string b, int idMedecin)
         {
             rapportChoisi.dateRapport = dRapport;
             rapportChoisi.bilan = b; // b = bilan
-            rapportChoisi. 
+        
+        }
+
+        public static MEDECIN trouveMedecin(int y)
+        {
+            var LQuery = maConnexion.MEDECIN.ToList()
+                           .Where(x => x.idMedecin == y);
+            return ((MEDECIN)LQuery.ToList().First());
         }
     }
 }

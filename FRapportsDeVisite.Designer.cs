@@ -112,6 +112,7 @@
             // 
             // txtNumRapport
             // 
+            this.txtNumRapport.Enabled = false;
             this.txtNumRapport.Location = new System.Drawing.Point(151, 42);
             this.txtNumRapport.Name = "txtNumRapport";
             this.txtNumRapport.Size = new System.Drawing.Size(100, 20);
