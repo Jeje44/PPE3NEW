@@ -40,6 +40,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.tbDateEmbauche = new System.Windows.Forms.TextBox();
+            this.btnOK = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnModifuer
@@ -54,6 +56,7 @@
             // 
             // tbNomVisteur
             // 
+            this.tbNomVisteur.Enabled = false;
             this.tbNomVisteur.Location = new System.Drawing.Point(338, 22);
             this.tbNomVisteur.Name = "tbNomVisteur";
             this.tbNomVisteur.Size = new System.Drawing.Size(100, 20);
@@ -61,6 +64,7 @@
             // 
             // tbPrenomVisiteur
             // 
+            this.tbPrenomVisiteur.Enabled = false;
             this.tbPrenomVisiteur.Location = new System.Drawing.Point(338, 83);
             this.tbPrenomVisiteur.Name = "tbPrenomVisiteur";
             this.tbPrenomVisiteur.Size = new System.Drawing.Size(100, 20);
@@ -139,11 +143,32 @@
             this.tbDateEmbauche.Size = new System.Drawing.Size(100, 20);
             this.tbDateEmbauche.TabIndex = 11;
             // 
+            // btnOK
+            // 
+            this.btnOK.Location = new System.Drawing.Point(434, 341);
+            this.btnOK.Name = "btnOK";
+            this.btnOK.Size = new System.Drawing.Size(75, 23);
+            this.btnOK.TabIndex = 13;
+            this.btnOK.Text = "Ok";
+            this.btnOK.UseVisualStyleBackColor = true;
+            this.btnOK.Click += new System.EventHandler(this.BtnOK_Click);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(235, 236);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(91, 13);
+            this.label6.TabIndex = 14;
+            this.label6.Text = "Date d\'embauche";
+            // 
             // FInformationcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.btnOK);
             this.Controls.Add(this.tbDateEmbauche);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -178,5 +203,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox tbDateEmbauche;
+        private System.Windows.Forms.Button btnOK;
+        private System.Windows.Forms.Label label6;
     }
 }
