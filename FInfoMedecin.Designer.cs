@@ -124,6 +124,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FInfoMedecin";
             this.Text = "FInfoMedecin";
+            this.Load += new System.EventHandler(this.FInfoMedecin_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
