@@ -72,5 +72,7 @@ namespace PPE3_Github_Tajek
         {
            // ModeleMission2.ModifRapport(txtBilan.Text, );
         }
+
+      
     }
 }
