@@ -44,17 +44,17 @@ namespace PPE3_Github_Tajek
         {
             return maConnexion.Visiteur.ToList();
         }
-        public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
+      /*  public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
         {
             rapportChoisi = new RAPPORT; 
 
-        }
+        }*/
 
         public static void ModifRapport(int idRapport, DateTime dRapport, int idMotif, string b, int idMedecin)
         {
             rapportChoisi.dateRapport = dRapport;
             rapportChoisi.bilan = b; // b = bilan
-            rapportChoisi. 
+           /* rapportChoisi. */
         }
     }
 }

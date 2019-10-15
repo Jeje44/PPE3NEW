@@ -64,17 +64,29 @@ namespace PPE3_Github_Tajek
             return connexionValide; 
         }
 
-        public static void ModifVisiteur(String adresse, string CP, string Ville)
+        public static bool ModifVisiteur(String adresse, string CP, string Ville)
         {
-            unVisiteur.cp = CP;
-            unVisiteur.rue = adresse;
-            unVisiteur.ville = Ville;
-            maConnexion.SaveChanges();
+            bool vertour = true;
+            try
+            {
+                unVisiteur.cp = CP;
+                unVisiteur.rue = adresse;
+                unVisiteur.ville = Ville;
+                maConnexion.SaveChanges();
+            }
+            catch(Exception ex)
+            {
+                vertour = false; 
+            }
+            return vertour;
            
-
-            
         }
+        public static bool possèdeUneRégion ()
+        {
+            bool vretour = false;
 
+            return vretour; 
+        }
 
     }
 }

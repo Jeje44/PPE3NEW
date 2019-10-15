@@ -73,6 +73,7 @@
             this.Controls.Add(this.btnMiss1);
             this.Name = "Menu";
             this.Text = "Menu";
+            
             this.ResumeLayout(false);
 
         }
