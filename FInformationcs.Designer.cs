@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnModifuer = new System.Windows.Forms.Button();
             this.tbNomVisteur = new System.Windows.Forms.TextBox();
             this.tbPrenomVisiteur = new System.Windows.Forms.TextBox();
@@ -42,6 +43,10 @@
             this.tbDateEmbauche = new System.Windows.Forms.TextBox();
             this.btnOK = new System.Windows.Forms.Button();
             this.label6 = new System.Windows.Forms.Label();
+            this.bsResponsabilité = new System.Windows.Forms.BindingSource(this.components);
+            this.dgvRegion = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.bsResponsabilité)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegion)).BeginInit();
             this.SuspendLayout();
             // 
             // btnModifuer
@@ -162,11 +167,20 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Date d\'embauche";
             // 
+            // dgvRegion
+            // 
+            this.dgvRegion.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRegion.Location = new System.Drawing.Point(517, 41);
+            this.dgvRegion.Name = "dgvRegion";
+            this.dgvRegion.Size = new System.Drawing.Size(240, 150);
+            this.dgvRegion.TabIndex = 15;
+            // 
             // FInformationcs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dgvRegion);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.btnOK);
             this.Controls.Add(this.tbDateEmbauche);
@@ -184,6 +198,8 @@
             this.Name = "FInformationcs";
             this.Text = "FInformationcs";
             this.Load += new System.EventHandler(this.FInformationcs_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.bsResponsabilité)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRegion)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -205,5 +221,7 @@
         private System.Windows.Forms.TextBox tbDateEmbauche;
         private System.Windows.Forms.Button btnOK;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.BindingSource bsResponsabilité;
+        private System.Windows.Forms.DataGridView dgvRegion;
     }
 }

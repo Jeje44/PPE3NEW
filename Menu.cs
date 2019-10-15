@@ -32,8 +32,9 @@ namespace PPE3_Github_Tajek
 
         private void BtnMiss1_Click(object sender, EventArgs e)
         {
-            Form LaFormeGestionDesVisiteur = new FInformationcs();
-            LaFormeGestionDesVisiteur.Show();
+            Form LaFormeMenuMission1 = new FMenuMission1();
+            LaFormeMenuMission1.Show();
+            
         }
     }
 }

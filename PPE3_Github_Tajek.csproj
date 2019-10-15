@@ -61,6 +61,18 @@
     <Compile Include="ConsulterFicheDeFrais.Designer.cs">
       <DependentUpon>ConsulterFicheDeFrais.cs</DependentUpon>
     </Compile>
+    <Compile Include="FChangerMdp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChangerMdp.Designer.cs">
+      <DependentUpon>FChangerMdp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMenuMission1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenuMission1.Designer.cs">
+      <DependentUpon>FMenuMission1.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModeleMission3.cs" />
     <Compile Include="Etat.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
@@ -182,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FInfoMedecin.resx">
       <DependentUpon>FInfoMedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenuMission1.resx">
+      <DependentUpon>FMenuMission1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>

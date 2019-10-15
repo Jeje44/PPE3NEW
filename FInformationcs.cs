@@ -27,26 +27,40 @@ namespace PPE3_Github_Tajek
             tbVilleVisiteur.Text = unVisiteur.ville.ToString();
             tbDateEmbauche.Text = unVisiteur.dateEmbauche.ToString();
             btnOK.Visible = true;
-           // btnModifuer.Visible = false;
+            // btnModifuer.Visible = false;
+
+            //Partie Résponsabilitée
+            bsResponsabilité.DataSource = ModeleMission1.unVisiteur.Region.ToList();
+            dgvRegion.DataSource = bsResponsabilité;
+            dgvRegion.Columns[0].Visible = false;
+            dgvRegion.Columns[2].Visible = false;
+            dgvRegion.Columns[3].Visible = false;
+            dgvRegion.Columns[4].Visible = false;
+            dgvRegion.Columns[5].Visible = false;
+            dgvRegion.Columns[6].Visible = false;
+            dgvRegion.Columns[1].HeaderText = "Région";
 
         }
 
         private void BtnModifuer_Click(object sender, EventArgs e)
         {
             ModeleMission1.ModifVisiteur(tbAdresseVisiteur.Text, tbCPVisiteur.Text, tbVilleVisiteur.Text);
-            
-               MessageBox.Show("Modification validée");
-            
 
-            
-            
-          
+            MessageBox.Show("Modification validée");
+            this.Close();
+
+
+
+
+
 
         }
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            this.Close(); 
+            this.Close();
         }
+
+       
     }
 }
