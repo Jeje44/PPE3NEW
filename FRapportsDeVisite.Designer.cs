@@ -41,12 +41,14 @@
             this.btnDetails = new System.Windows.Forms.Button();
             this.cboPraticien = new System.Windows.Forms.ComboBox();
             this.dtpDateRapport = new System.Windows.Forms.DateTimePicker();
+            this.cboMotif = new System.Windows.Forms.ComboBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnModifier = new System.Windows.Forms.Button();
+            this.btnAjouter = new System.Windows.Forms.Button();
             this.bsRapport = new System.Windows.Forms.BindingSource(this.components);
             this.bsMedecin = new System.Windows.Forms.BindingSource(this.components);
             this.bsOffrir = new System.Windows.Forms.BindingSource(this.components);
             this.bsMotif = new System.Windows.Forms.BindingSource(this.components);
-            this.cboMotif = new System.Windows.Forms.ComboBox();
-            this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOffrir)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).BeginInit();
@@ -160,14 +162,6 @@
             this.dtpDateRapport.Size = new System.Drawing.Size(200, 20);
             this.dtpDateRapport.TabIndex = 13;
             // 
-            // bsRapport
-            // 
-            this.bsRapport.CurrentChanged += new System.EventHandler(this.BsRapport_CurrentChanged);
-            // 
-            // bsMedecin
-            // 
-            this.bsMedecin.CurrentChanged += new System.EventHandler(this.BsMedecin_CurrentChanged);
-            // 
             // cboMotif
             // 
             this.cboMotif.FormattingEnabled = true;
@@ -186,11 +180,40 @@
             this.label7.TabIndex = 15;
             this.label7.Text = "Rapport de visite";
             // 
+            // btnModifier
+            // 
+            this.btnModifier.Location = new System.Drawing.Point(26, 391);
+            this.btnModifier.Name = "btnModifier";
+            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.TabIndex = 16;
+            this.btnModifier.Text = "Modifier";
+            this.btnModifier.UseVisualStyleBackColor = true;
+            this.btnModifier.Click += new System.EventHandler(this.BtnModifier_Click);
+            // 
+            // btnAjouter
+            // 
+            this.btnAjouter.Location = new System.Drawing.Point(129, 391);
+            this.btnAjouter.Name = "btnAjouter";
+            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.TabIndex = 17;
+            this.btnAjouter.Text = "Ajouter";
+            this.btnAjouter.UseVisualStyleBackColor = true;
+            // 
+            // bsRapport
+            // 
+            this.bsRapport.CurrentChanged += new System.EventHandler(this.BsRapport_CurrentChanged);
+            // 
+            // bsMedecin
+            // 
+            this.bsMedecin.CurrentChanged += new System.EventHandler(this.BsMedecin_CurrentChanged);
+            // 
             // FRapportsDeVisite
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnAjouter);
+            this.Controls.Add(this.btnModifier);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.cboMotif);
             this.Controls.Add(this.dtpDateRapport);
@@ -238,5 +261,7 @@
         private System.Windows.Forms.DateTimePicker dtpDateRapport;
         private System.Windows.Forms.ComboBox cboMotif;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnModifier;
+        private System.Windows.Forms.Button btnAjouter;
     }
 }

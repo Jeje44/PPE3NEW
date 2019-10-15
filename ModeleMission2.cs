@@ -8,7 +8,11 @@ namespace PPE3_Github_Tajek
 {
     public static class ModeleMission2
     {
+        private static RAPPORT rapportChoisi;
+
         private static PPE3_TAJEKEntities maConnexion;
+
+        public static RAPPORT RapportChoisi { get => rapportChoisi; set => rapportChoisi = value; }
 
         public static void init()
         {
@@ -39,6 +43,18 @@ namespace PPE3_Github_Tajek
         public static List<Visiteur> listeVisiteurs()
         {
             return maConnexion.Visiteur.ToList();
+        }
+        public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
+        {
+            rapportChoisi = new RAPPORT; 
+
+        }
+
+        public static void ModifRapport(int idRapport, DateTime dRapport, int idMotif, string b, int idMedecin)
+        {
+            rapportChoisi.dateRapport = dRapport;
+            rapportChoisi.bilan = b; // b = bilan
+            rapportChoisi. 
         }
     }
 }

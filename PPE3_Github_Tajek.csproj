@@ -177,6 +177,9 @@
     <EmbeddedResource Include="FGestionRemboursementFrais.resx">
       <DependentUpon>FGestionRemboursementFrais.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="FInfoMedecin.resx">
+      <DependentUpon>FInfoMedecin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
     </EmbeddedResource>

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -36,6 +37,8 @@
             this.txtPrenom = new System.Windows.Forms.TextBox();
             this.txtTelephone = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
+            this.bsMedecin = new System.Windows.Forms.BindingSource(this.components);
+            ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -55,7 +58,6 @@
             this.label2.Size = new System.Drawing.Size(29, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nom";
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
@@ -103,6 +105,10 @@
             this.label4.TabIndex = 7;
             this.label4.Text = "Téléphone";
             // 
+            // bsMedecin
+            // 
+            this.bsMedecin.CurrentChanged += new System.EventHandler(this.BsMedecin_CurrentChanged);
+            // 
             // FInfoMedecin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -118,6 +124,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FInfoMedecin";
             this.Text = "FInfoMedecin";
+            ((System.ComponentModel.ISupportInitialize)(this.bsMedecin)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -133,5 +140,6 @@
         private System.Windows.Forms.TextBox txtPrenom;
         private System.Windows.Forms.TextBox txtTelephone;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.BindingSource bsMedecin;
     }
 }

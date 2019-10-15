@@ -17,8 +17,10 @@ namespace PPE3_Github_Tajek
             InitializeComponent();
         }
 
-        private void Label2_Click(object sender, EventArgs e)
+        private void BsMedecin_CurrentChanged(object sender, EventArgs e)
         {
+            MEDECIN m = (MEDECIN)bsMedecin.Current;
+            bsMedecin.DataSource = ModeleMission2.listeMedecin();
 
         }
     }

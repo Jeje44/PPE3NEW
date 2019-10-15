@@ -68,6 +68,9 @@ namespace PPE3_Github_Tajek
 
         }
 
-       
+        private void BtnModifier_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }
