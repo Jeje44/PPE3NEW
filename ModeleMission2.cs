@@ -40,5 +40,9 @@ namespace PPE3_Github_Tajek
         {
             return maConnexion.Visiteur.ToList();
         }
+        public static void ModifVisiteur(String adresse , int CP , string Ville)
+        {
+
+        }
     }
 }

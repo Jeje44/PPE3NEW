@@ -15,7 +15,7 @@ namespace PPE3_Github_Tajek
         private static bool connexionValide;
        
 
-
+         
         public static void init()
         {
             /* Instantiation d’un objet de la classe typée chaine de connexion SqlConnection */
@@ -53,6 +53,7 @@ namespace PPE3_Github_Tajek
                     connexionValide = false;
                     message = message + "Erreur de mot de passe ou Identifiant incorrect";
                 }
+
             
             maConnexion.SaveChanges();
             return message;
@@ -62,8 +63,18 @@ namespace PPE3_Github_Tajek
         {
             return connexionValide; 
         }
-      
-          
+
+        public static void ModifVisiteur(String adresse, string CP, string Ville)
+        {
+            unVisiteur.cp = CP;
+            unVisiteur.rue = adresse;
+            unVisiteur.ville = Ville;
+            maConnexion.SaveChanges();
+           
+
+            
+        }
+
 
     }
 }
