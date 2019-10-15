@@ -26,8 +26,24 @@ namespace PPE3_Github_Tajek
         {
             return iduser;
         }
+        public static List<FraisForfait> ListeFraisForfaits()
+        {
+            return maConnexion.FraisForfait.ToList();
+        }
 
+        public static List<LigneFraisForfait> ListeLigneFraisForfait()
+        {
+            return maConnexion.LigneFraisForfait.ToList();
+        }
 
+        public static List<fichefrais> Listefichefrais()
+        {
+            return maConnexion.fichefrais.ToList();
+        }
+        public static List<> Liste()
+        {
+            return maConnexion..ToList();
+        }
 
     }
 }
