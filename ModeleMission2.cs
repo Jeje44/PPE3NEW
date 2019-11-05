@@ -49,7 +49,6 @@ namespace PPE3_Github_Tajek
             return maConnexion.Visiteur.ToList();
         }
 
-
             /*public static bool AjoutRapport(int idRapport, DateTime dateRapport, int idMotif, string bilan, int idMedecin)
             {
                 rapportChoisi = new RAPPORT; 

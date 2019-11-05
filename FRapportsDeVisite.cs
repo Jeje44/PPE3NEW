@@ -57,6 +57,8 @@ namespace PPE3_Github_Tajek
 
         private void BtnDetails_Click(object sender, EventArgs e)
         {
+          
+            ModeleMission2.MedecinChoisi = (MEDECIN) bsMedecin.Current;
             Form LaFormeInformationMedecin = new FInfoMedecin();
             LaFormeInformationMedecin.Show();
         }

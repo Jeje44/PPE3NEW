@@ -73,6 +73,12 @@
     <Compile Include="FMenuMission1.Designer.cs">
       <DependentUpon>FMenuMission1.cs</DependentUpon>
     </Compile>
+    <Compile Include="FMission2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMission2.Designer.cs">
+      <DependentUpon>FMission2.cs</DependentUpon>
+    </Compile>
     <Compile Include="ModeleMission3.cs" />
     <Compile Include="Etat.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
@@ -197,6 +203,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenuMission1.resx">
       <DependentUpon>FMenuMission1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMission2.resx">
+      <DependentUpon>FMission2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>
