@@ -199,6 +199,7 @@
             this.btnAjouter.TabIndex = 17;
             this.btnAjouter.Text = "Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
+            this.btnAjouter.Click += new System.EventHandler(this.BtnAjouter_Click);
             // 
             // bsRapport
             // 

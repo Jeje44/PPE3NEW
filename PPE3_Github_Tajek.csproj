@@ -61,6 +61,12 @@
     <Compile Include="ConsulterFicheDeFrais.Designer.cs">
       <DependentUpon>ConsulterFicheDeFrais.cs</DependentUpon>
     </Compile>
+    <Compile Include="FAjoutModifRapportDeVisite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAjoutModifRapportDeVisite.Designer.cs">
+      <DependentUpon>FAjoutModifRapportDeVisite.cs</DependentUpon>
+    </Compile>
     <Compile Include="FChangerMdp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,12 @@
     </Compile>
     <Compile Include="FMenuMission1.Designer.cs">
       <DependentUpon>FMenuMission1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMission2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMission2.Designer.cs">
+      <DependentUpon>FMission2.cs</DependentUpon>
     </Compile>
     <Compile Include="ModeleMission3.cs" />
     <Compile Include="Etat.cs">
@@ -183,6 +195,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FAjoutModifRapportDeVisite.resx">
+      <DependentUpon>FAjoutModifRapportDeVisite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FChangerMdp.resx">
       <DependentUpon>FChangerMdp.cs</DependentUpon>
     </EmbeddedResource>
@@ -200,6 +215,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMenuMission1.resx">
       <DependentUpon>FMenuMission1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMission2.resx">
+      <DependentUpon>FMission2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FRapportsDeVisite.resx">
       <DependentUpon>FRapportsDeVisite.cs</DependentUpon>

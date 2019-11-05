@@ -30,6 +30,7 @@ namespace PPE3_Github_Tajek
             RAPPORT r = (RAPPORT)bsRapport.Current;
             bsRapport.DataSource = ModeleMission2.listeRapport();
             txtNumRapport.Text = r.idRapport.ToString();
+            txtBilan.Text = r.bilan.ToString();
     
         }
 
@@ -57,6 +58,8 @@ namespace PPE3_Github_Tajek
 
         private void BtnDetails_Click(object sender, EventArgs e)
         {
+          
+            ModeleMission2.MedecinChoisi = (MEDECIN) bsMedecin.Current;
             Form LaFormeInformationMedecin = new FInfoMedecin();
             LaFormeInformationMedecin.Show();
         }
@@ -70,9 +73,15 @@ namespace PPE3_Github_Tajek
 
         private void BtnModifier_Click(object sender, EventArgs e)
         {
-           // ModeleMission2.ModifRapport(txtBilan.Text, );
+       
         }
 
-      
+        private void BtnAjouter_Click(object sender, EventArgs e)
+        {
+            Form laFormeAjout = new FAjoutModifRapportDeVisite();
+            laFormeAjout.Show();
+
+
+        }
     }
 }

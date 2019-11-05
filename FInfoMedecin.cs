@@ -27,8 +27,8 @@ namespace PPE3_Github_Tajek
 
         private void FInfoMedecin_Load(object sender, EventArgs e)
         {
-            System.Type type = bsMedecin.GetType();
-            var id = (int)type.GetProperty("idMedecin").GetValue(bsMedecin.Current, null);
+            
+
             //ModeleMission2.trouveMedecin; 
 
             txtidMedecin.Text = ModeleMission2.MedecinChoisi.idMedecin.ToString();
