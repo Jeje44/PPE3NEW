@@ -189,6 +189,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FChangerMdp.resx">
+      <DependentUpon>FChangerMdp.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FConnex.resx">
       <DependentUpon>FConnex.cs</DependentUpon>
     </EmbeddedResource>
