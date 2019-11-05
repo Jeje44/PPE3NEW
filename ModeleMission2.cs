@@ -9,14 +9,13 @@ namespace PPE3_Github_Tajek
     public static class ModeleMission2
     {
         private static RAPPORT rapportChoisi;
-        private static MEDECIN medecinChoisi; 
+        private static MEDECIN medecinChoisi;
+
 
         private static PPE3_TAJEKEntities maConnexion;
 
         public static RAPPORT RapportChoisi { get => rapportChoisi; set => rapportChoisi = value; }
         public static MEDECIN MedecinChoisi { get => medecinChoisi; set => medecinChoisi = value; }
-
-
 
         public static void init()
         {
@@ -31,7 +30,7 @@ namespace PPE3_Github_Tajek
 
         public static List<MEDECIN> listeMedecin()
         {
-            return maConnexion.MEDECIN.ToList();
+            return maConnexion.MEDECIN.ToList(); 
         }
 
         public static List<OFFRIR> listeOffrir()

@@ -61,6 +61,12 @@
     <Compile Include="ConsulterFicheDeFrais.Designer.cs">
       <DependentUpon>ConsulterFicheDeFrais.cs</DependentUpon>
     </Compile>
+    <Compile Include="FAjoutModifRapportDeVisite.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAjoutModifRapportDeVisite.Designer.cs">
+      <DependentUpon>FAjoutModifRapportDeVisite.cs</DependentUpon>
+    </Compile>
     <Compile Include="FChangerMdp.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -189,6 +195,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FAjoutModifRapportDeVisite.resx">
+      <DependentUpon>FAjoutModifRapportDeVisite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FChangerMdp.resx">
       <DependentUpon>FChangerMdp.cs</DependentUpon>
     </EmbeddedResource>
