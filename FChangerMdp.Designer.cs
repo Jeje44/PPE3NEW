@@ -34,6 +34,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.tbNewMDP2 = new System.Windows.Forms.TextBox();
+            this.btnValiderMDP = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // tbMDP
@@ -84,11 +85,22 @@
             this.tbNewMDP2.Size = new System.Drawing.Size(100, 20);
             this.tbNewMDP2.TabIndex = 5;
             // 
+            // btnValiderMDP
+            // 
+            this.btnValiderMDP.Location = new System.Drawing.Point(305, 232);
+            this.btnValiderMDP.Name = "btnValiderMDP";
+            this.btnValiderMDP.Size = new System.Drawing.Size(75, 23);
+            this.btnValiderMDP.TabIndex = 6;
+            this.btnValiderMDP.Text = "Valider";
+            this.btnValiderMDP.UseVisualStyleBackColor = true;
+            this.btnValiderMDP.Click += new System.EventHandler(this.BtnValiderMDP_Click);
+            // 
             // FChangerMdp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnValiderMDP);
             this.Controls.Add(this.tbNewMDP2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -97,6 +109,7 @@
             this.Controls.Add(this.tbMDP);
             this.Name = "FChangerMdp";
             this.Text = "FChangerMdp";
+            this.Load += new System.EventHandler(this.FChangerMdp_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -110,5 +123,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox tbNewMDP2;
+        private System.Windows.Forms.Button btnValiderMDP;
     }
 }
