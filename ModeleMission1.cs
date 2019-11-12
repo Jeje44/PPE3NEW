@@ -94,6 +94,14 @@ namespace PPE3_Github_Tajek
         {
             return maConnexion.Visiteur.ToList();
         }
+        public static List<Region> ListesRegions()
+        {
+            return maConnexion.Region.ToList();
+        }
+        public static List<Secteur> ListesSecteur()
+        {
+            return maConnexion.Secteur.ToList();
+        }
         public static bool changeMDP(string AncPasswdSaisi ,string PasswdSaisi)
         {
             bool vretour = false;
@@ -116,5 +124,6 @@ namespace PPE3_Github_Tajek
 
 
         }
+       
     }
 }
