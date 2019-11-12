@@ -10,6 +10,7 @@ namespace PPE3_Github_Tajek
     {
         private static RAPPORT rapportChoisi;
         private static MEDECIN medecinChoisi;
+        private static Visiteur visiteurConnecte;
 
 
         private static PPE3_TAJEKEntities maConnexion;
@@ -17,15 +18,34 @@ namespace PPE3_Github_Tajek
         public static RAPPORT RapportChoisi { get => rapportChoisi; set => rapportChoisi = value; }
         public static MEDECIN MedecinChoisi { get => medecinChoisi; set => medecinChoisi = value; }
 
+
         public static void init()
         {
       
             maConnexion = new PPE3_TAJEKEntities();
+            var LQuery = maConnexion.Visiteur.ToList().Where(x => x.idVisiteur == "a13");
+            visiteurConnecte = (Visiteur)LQuery.First();
         }
 
         public static List<RAPPORT> listeRapport()
         {
             return maConnexion.RAPPORT.ToList();
+        }
+        public static Object listeRapportVisiteur()
+        {
+            var LQuery = maConnexion.RAPPORT.ToList()
+                .Where(x => x.idVisiteur == visiteurConnecte.idVisiteur )
+                .Select(x => new { x.dateRapport,x.MEDECIN.nom,x.MEDECIN.prenom,x.idRapport,x.MEDECIN.idMedecin})
+                           .OrderBy(x => x.nom);
+            return LQuery.ToList();
+        }
+        public static Object listeRapportVisiteurMedecin(int vidMedecin)
+        {
+            var LQuery = maConnexion.RAPPORT.ToList()
+                .Where(x => x.idVisiteur == visiteurConnecte.idVisiteur && x.idMedecin== vidMedecin)
+                .Select(x => new { x.dateRapport, x.MEDECIN.nom, x.MEDECIN.prenom, x.idRapport, x.MEDECIN.idMedecin })
+                           .OrderBy(x => x.nom);
+            return LQuery.ToList();
         }
 
         public static List<MEDECIN> listeMedecin()
