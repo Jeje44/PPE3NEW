@@ -54,7 +54,6 @@
             // 
             // bsRapport
             // 
-            this.bsRapport.CurrentChanged += new System.EventHandler(this.BsRapport_CurrentChanged);
             // 
             // FTousRapports
             // 
@@ -65,7 +64,6 @@
             this.Controls.Add(this.cborapport);
             this.Name = "FTousRapports";
             this.Text = "FTousRapports";
-            this.Load += new System.EventHandler(this.FTousRapports_Load);
             ((System.ComponentModel.ISupportInitialize)(this.bsRapport)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
