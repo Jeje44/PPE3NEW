@@ -30,6 +30,7 @@
         {
             this.btnConsultation = new System.Windows.Forms.Button();
             this.btnMDP = new System.Windows.Forms.Button();
+            this.btnListeVisiteur = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btnConsultation
@@ -52,11 +53,22 @@
             this.btnMDP.UseVisualStyleBackColor = true;
             this.btnMDP.Click += new System.EventHandler(this.BtnMDP_Click);
             // 
+            // btnListeVisiteur
+            // 
+            this.btnListeVisiteur.Location = new System.Drawing.Point(570, 127);
+            this.btnListeVisiteur.Name = "btnListeVisiteur";
+            this.btnListeVisiteur.Size = new System.Drawing.Size(172, 23);
+            this.btnListeVisiteur.TabIndex = 2;
+            this.btnListeVisiteur.Text = "Visualisation des Visiteurs";
+            this.btnListeVisiteur.UseVisualStyleBackColor = true;
+            this.btnListeVisiteur.Click += new System.EventHandler(this.BtnListeVisiteur_Click);
+            // 
             // FMenuMission1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.btnListeVisiteur);
             this.Controls.Add(this.btnMDP);
             this.Controls.Add(this.btnConsultation);
             this.Name = "FMenuMission1";
@@ -69,5 +81,6 @@
 
         private System.Windows.Forms.Button btnConsultation;
         private System.Windows.Forms.Button btnMDP;
+        private System.Windows.Forms.Button btnListeVisiteur;
     }
 }
