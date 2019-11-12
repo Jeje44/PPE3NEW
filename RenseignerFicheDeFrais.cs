@@ -15,7 +15,8 @@ namespace PPE3_Github_Tajek
         public RenseignerFicheDeFrais()
         {
             InitializeComponent();
-            ligneMatricule.Text = "karim" ;//ModeleMission3.getiduser(); 
+            ligneMatricule.Text = "karim"; //ModeleMission1.GetVisiteurCo();
+            ligneNom.Text = "zaied"; //appelle du modele mission 1 
         }
 
         private void RenseignerFicheDeFrais_Load(object sender, EventArgs e)

@@ -207,6 +207,9 @@
     <Compile Include="Visiteur.cs">
       <DependentUpon>PPE3_Github_Tajek.tt</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ConsulterFicheDeFrais.resx">
+      <DependentUpon>ConsulterFicheDeFrais.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FAjoutModifRapportDeVisite.resx">
       <DependentUpon>FAjoutModifRapportDeVisite.cs</DependentUpon>
     </EmbeddedResource>
