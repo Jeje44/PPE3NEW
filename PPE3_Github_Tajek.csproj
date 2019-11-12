@@ -73,6 +73,12 @@
     <Compile Include="FChangerMdp.Designer.cs">
       <DependentUpon>FChangerMdp.cs</DependentUpon>
     </Compile>
+    <Compile Include="FListeVisiteurcs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListeVisiteurcs.Designer.cs">
+      <DependentUpon>FListeVisiteurcs.cs</DependentUpon>
+    </Compile>
     <Compile Include="FMenuMission1.cs">
       <SubType>Form</SubType>
     </Compile>

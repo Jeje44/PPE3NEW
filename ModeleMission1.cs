@@ -21,6 +21,8 @@ namespace PPE3_Github_Tajek
             /* Instantiation d’un objet de la classe typée chaine de connexion SqlConnection */
             maConnexion = new PPE3_TAJEKEntities();
         }
+        public static Visiteur GetVisiteurCo { get => unVisiteurCo;  }
+        public static Visiteur setVisiteurCo { set => unVisiteurCo = value; }
         private static string GetMd5Hash(string PasswdSaisi)
         {
             byte[] inputBytes = System.Text.Encoding.ASCII.GetBytes(PasswdSaisi);
@@ -88,7 +90,10 @@ namespace PPE3_Github_Tajek
             return vretour; 
         }
 
-        
+        public static List<Visiteur> ListeVisiteurs()
+        {
+            return maConnexion.Visiteur.ToList();
+        }
         public static bool changeMDP(string AncPasswdSaisi ,string PasswdSaisi)
         {
             bool vretour = false;
