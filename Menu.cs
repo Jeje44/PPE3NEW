@@ -39,7 +39,7 @@ namespace PPE3_Github_Tajek
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Form LaFormeMenuMiss2 = new FMission2();
+            Form LaFormeMenuMiss2 = new FTousRapports();
             LaFormeMenuMiss2.Show();
         }
     }
