@@ -88,44 +88,28 @@ namespace PPE3_Github_Tajek
             return vretour; 
         }
 
-     /*   public static string changeMDP(string identifiant, string mp)
-        {
-            bool vretour = false; 
-            if (unVisiteur.password.ToString() == GetMd5Hash(mp.ToString()))
-            {
-
-
-                vretour = true;
-
-                
-            }
-            else
-            {
-
-                vretour = false; 
-                
-            }
-          // maConnexion.SaveChanges();
-          return vretour;
-
-        }
-        public static bool verif( string PasswdSaisi)
+        
+        public static bool changeMDP(string AncPasswdSaisi ,string PasswdSaisi)
         {
             bool vretour = false;
-            unVisiteurCo.password = GetMd5Hash(PasswdSaisi);
-            try
+            if (unVisiteurCo.password == GetMd5Hash(AncPasswdSaisi))
             {
-
-                maConnexion.SaveChanges();
-            }
-            catch (Exception ex)
-            {
-                vretour = false;
+               
+                try
+                {
+                    unVisiteurCo.password = GetMd5Hash(PasswdSaisi);
+                    maConnexion.SaveChanges();
+                    vretour = true;
+                }
+                catch (Exception ex)
+                {
+                    vretour = false;
+                }
             }
 
                 return vretour; 
 
 
-        }*/
+        }
     }
 }

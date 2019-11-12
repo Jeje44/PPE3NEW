@@ -24,11 +24,22 @@ namespace PPE3_Github_Tajek
 
         private void BtnValiderMDP_Click(object sender, EventArgs e)
         {
-            if()
+            if(tbNewMdp.Text == tbNewMDP2.Text)
             {
-
-                MessageBox.Show("Modification validée");
+                
+                if (ModeleMission1.changeMDP(tbMDP.Text, tbNewMdp.Text))
+                {
+                    MessageBox.Show("Modification validée");
+                }
+                else
+                {
+                    MessageBox.Show("erreur");
+                }
                 this.Close();
+            }
+            else
+            {
+                MessageBox.Show("erreur mdp");
             }
         }
     }
