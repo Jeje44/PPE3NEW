@@ -53,7 +53,7 @@ namespace PPE3_Github_Tajek
         {
             
             bsRapport.DataSource = ModeleMission2.listeRapportVisiteurMedecin(((MEDECIN)bsMedecin.Current).idMedecin);
-            dgvRapport.DataSource = bsRapport;
+            dgvRapport.DataSource = bsRapport; 
 
         }
     }
