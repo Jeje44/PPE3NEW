@@ -68,5 +68,22 @@ namespace PPE3_Github_Tajek
             return ((MEDECIN)LQuery.ToList().First());
 
         }
+
+        public static bool ModifRapport(string medecin, DateTime date, string motif, string bilan)
+        {
+            bool vertour = true;
+            try
+            {
+                rapportChoisi.MEDECIN.nom = medecin;
+                rapportChoisi.dateRapport = date;
+                rapportChoisi.MOTIF.libMotif  = motif;
+                rapportChoisi.bilan = bilan; 
+            }
+            catch (Exception ex)
+            {
+                vertour = false;
+            }
+            return vertour;
+        }
     }
 }
