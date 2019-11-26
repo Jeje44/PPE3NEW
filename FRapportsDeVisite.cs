@@ -30,7 +30,7 @@ namespace PPE3_Github_Tajek
             RAPPORT r = (RAPPORT)bsRapport.Current;
             bsRapport.DataSource = ModeleMission2.listeRapport();
             txtNumRapport.Text = r.idRapport.ToString();
-            txtBilan.Text = r.bilan.ToString();
+            txtBilan.Text = r.bilan;
     
         }
 
@@ -46,6 +46,10 @@ namespace PPE3_Github_Tajek
             cboMotif.DisplayMember = "libMotif";
             bsMotif.DataSource = ModeleMission2.listeMotif();
             cboMotif.DataSource = bsMotif;
+
+
+            txtBilan.Text = ModeleMission2.RapportChoisi.bilan; 
+
 
         }
 
